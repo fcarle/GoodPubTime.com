@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodPubTime.com - Custom Coasters</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="GoodPubTime.com Logo" class="logo">
+        <p>Bringing a smile to your local pub, one coaster at a time.</p>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Fresh Jokes, Delivered Monthly.</h2>
+                    <p>We believe the best times are shared. GoodPubTime.com delivers five new joke coasters to your pub every month, with humour crafted by our UK-based team to ensure your patrons always have something new to chuckle at.</p>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/coaster-horse.png" alt="A coaster with a horse joke">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h3>Proudly British Humour. Expertly Crafted.</h3>
+                <p>Based in England, our team is dedicated to the art of the perfect pub joke. All our jokes are written right here in the UK by our comedy-loving team, ensuring an authentic sense of humour in every design.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h3>How It Works</h3>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <h4>Request a Proposal</h4>
+                        <p>Start by filling out the form below. Let us know how many coasters you need, and we'll send a proposal tailored to your pub.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <h4>Receive Your Coasters</h4>
+                        <p>We'll deliver them right to your pub's doorstep, ready for your customers.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <h4>Spread the Laughs</h4>
+                        <p>Watch as a simple coaster becomes a conversation starter and a source of joy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coaster-gallery">
+            <h2>A Taste of Our Humour</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-milk.png" alt="Coaster with milk joke"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-myboss.png" alt="Coaster with boss joke"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-solve.png" alt="Coaster with problem solving joke"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-wife.png" alt="Coaster with wife joke"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-horse.png" alt="Coaster with horse joke"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="coaster-item"><img src="images/coaster-food.png" alt="Coaster with food joke"></div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Ready to Bring More Fun to Your Pub?</h2>
+                <p>Fill out the form below to get started. We'll get in touch to finalize your subscription.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="pub-location">Location of the Pub</label>
+                        <input type="text" id="pub-location" name="pub_location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coaster-amount">Coasters per Month: <span id="coaster-value">5100</span></label>
+                        <input type="range" id="coaster-amount" name="coaster_amount" min="200" max="10000" value="5100" step="100">
+                        <div class="price-display">
+                            <span>Price per coaster: <strong id="price-per-coaster">£0.60</strong></span>
+                            <span>Total monthly cost: <strong id="total-price">£3,060.00</strong></span>
+                        </div>
+                        <input type="hidden" name="price_per_coaster" id="hidden-price-per-coaster">
+                        <input type="hidden" name="total_price" id="hidden-total-price">
+                    </div>
+                    <button type="submit" class="cta-button">Send Proposal</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoodPubTime.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
