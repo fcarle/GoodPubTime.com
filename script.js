@@ -9,12 +9,12 @@ function updatePrice() {
     const quantity = parseInt(coasterSlider.value);
     let pricePerCoaster;
 
-    if (quantity <= 300) {
-        pricePerCoaster = 1.00;
-    } else if (quantity >= 400 && quantity < 2000) {
-        pricePerCoaster = 0.80;
-    } else { // 2000 and more
-        pricePerCoaster = 0.60;
+    if (quantity <= 1000) {
+        pricePerCoaster = 0.50;
+    } else if (quantity <= 7000) {
+        pricePerCoaster = 0.40;
+    } else { // 7100 and more
+        pricePerCoaster = 0.30;
     }
 
     const totalPrice = quantity * pricePerCoaster;
