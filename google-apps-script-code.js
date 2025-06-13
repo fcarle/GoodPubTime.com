@@ -12,6 +12,7 @@ function doPost(e) {
     var headers = [
       'Timestamp', 
       'Name', 
+      'Email',
       'Phone Number', 
       'Pub Location', 
       'Coasters per Month', 
@@ -28,6 +29,7 @@ function doPost(e) {
     var rowData = [
       timestamp,
       data.name || 'N/A',
+      data.email || 'N/A',
       data.phone || 'N/A',
       data.pub_location || 'N/A',
       data.coaster_amount || 'N/A',
@@ -42,6 +44,7 @@ function doPost(e) {
     var subject = 'New Proposal from GoodPubTime.com for ' + data.name;
     var body = 'You have a new proposal submission:\n\n' +
                'Name: ' + data.name + '\n' +
+               'Email: ' + data.email + '\n' +
                'Phone: ' + data.phone + '\n' +
                'Pub Location: ' + data.pub_location + '\n' +
                'Coasters per Month: ' + data.coaster_amount + '\n' +
